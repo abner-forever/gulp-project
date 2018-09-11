@@ -1,5 +1,5 @@
 $(function () {
-    $(window).on("mousemove", function () {
+    $(window).on("click", function () {
         var content = $("input").val();
         var $msg = $("<span>");
         $msg.addClass("msg");
