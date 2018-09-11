@@ -1,0 +1,17 @@
+{
+  "name": "danmu",
+  "version": "1.0.0",
+  "description": "弹幕",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel-minify": "^0.4.3",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-connect": "^5.6.1"
+  }
+}

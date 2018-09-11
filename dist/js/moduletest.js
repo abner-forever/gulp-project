@@ -1,0 +1,1 @@
+console.log("\u52A0\u8F7D\u4E3B\u9875js\u6587\u4EF6"),require(["config"],function(){require(["jquery","common"],function(a){console.log(a);var b=document.getElementById("test");draggedele({ele:b})})});
