@@ -2,6 +2,7 @@ let gulp = require("gulp");
 let minifyJS = require("gulp-babel-minify");
 let minifyCSS = require("gulp-clean-css");
 let connect = require("gulp-connect");
+let imagemin = require("gulp-imagemin")
 //定义一个build的任务
 gulp.task("build", () => {
     //压缩JS文件
@@ -15,7 +16,10 @@ gulp.task("build", () => {
     //复制HTML
     gulp.src("./src/**/*.html")
         .pipe(gulp.dest("./dist"));
-
+    //复制压缩图片
+    gulp.src('./src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images'))
 });
 
 //刷新html界面
